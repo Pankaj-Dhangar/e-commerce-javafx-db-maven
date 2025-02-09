@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:controller="org.dnyanyog.product.UpdateScreenController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="594.0" prefWidth="600.0" style="-fx-background-color: skyBlue;">
+         <children>
+            <Label fx:id="updateProductLable" layoutX="243.0" layoutY="49.0" prefHeight="22.0" prefWidth="170.0" style="-fx-background-color: F6C794;" text="    Update Product">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="productNameLable" layoutX="88.0" layoutY="109.0" text="Enter Prdoct Name">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="productPriceLable" layoutX="85.0" layoutY="157.0" text="Enter Product Price">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="productQuantityLable" layoutX="88.0" layoutY="197.0" text="Enter Product Quantity">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productQuantity" layoutX="330.0" layoutY="192.0" />
+            <TextField fx:id="productPrice" layoutX="329.0" layoutY="152.0" />
+            <TextField fx:id="productName" layoutX="329.0" layoutY="104.0" />
+            <Button fx:id="updateButton" layoutX="328.0" layoutY="281.0" mnemonicParsing="false" onAction="#updateButtonClick" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: gold;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorMessage" layoutX="326.0" layoutY="359.0" prefHeight="18.0" prefWidth="150.0">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="productIDLable" layoutX="88.0" layoutY="246.0" text="Enter Product Id To Update">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productId" layoutX="329.0" layoutY="241.0" />
+            <Label layoutX="344.0" layoutY="319.0" text="Click Here To Update" />
+            <Button fx:id="backButton" layoutX="45.0" layoutY="323.0" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: gold;" text="Back">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="55.0" layoutY="359.0" text="Click Here To Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
